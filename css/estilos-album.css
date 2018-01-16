@@ -1,0 +1,90 @@
+/* estilo do álbum de fotos album.html */
+
+* {
+	margin: 0; /* zerar margens */
+	padding: 0; /* zerar espaçamentos */
+	font-family: Arial, tahoma, open-sans;  /* fonte */
+	font-size: 16px;  /* tamanho da fonte */
+	color: #222; /* cor da fonte */
+}
+
+body {
+	background: #ececec; /* cor de fundo */
+}
+
+h1 {
+	text-align: center; /* alinhamento do texto */
+	font-size: 30px; /* tamanho da fonte */
+	line-height: 50px; /* altura da linha */
+	margin: 20px 0px 20px 0px; /* margens */
+}
+
+p {
+	text-align: center; /* alinhamento do texto */
+	line-height: 30px; /* altura da linha */
+}
+
+ul {
+	list-style: none; /* estilo da lista */
+	#background: #faa; /* cor de fundo */
+	width: 620px; /* largura */
+	height: 250px; /* altura*/
+	margin: auto; /* margem */
+}
+
+ul li {
+	display: inline; /* mostrar */
+	margin: 5px;
+}
+
+img {
+	width: 100px;
+}
+
+/* classe de img das fotos pequenas em album.html */
+.mini {
+	width: 100px;
+	border: 5px solid #fff;
+	box-shadow: 0px 0px 5px #ccc;
+}
+
+/* id fotos onde estão os links do album.html */
+#fotos a {
+	display: inline-block; /* mostrar */
+	line-height: 10px; /* altura da linha */
+}
+/* estado do ponteiro sobre o link */
+#fotos a:hover {
+	box-shadow: 0px 0px 10px #2196f3; /* sombreamento */
+	transition: transform 1.5s; /* transição */
+	transform: rotate(10deg) scale(2); /* transformação */
+	z-index: 999; /* profundidade */
+}
+
+/* classe de img das fotos grandes em foto01.html, foto02.html */
+.grande {
+	width: 800px;
+	border: 20px solid #fff;
+	box-shadow: 0px 0px 10px #ccc;
+}
+/* id da figure que tem dentro as fotos grandes em foto01.html, foto02.html */
+#moldura-foto-grande {
+	width: 840px;
+	margin: auto;
+	line-height: 10px;
+}
+/* class para os links que serão botões */
+.botao {
+	text-decoration: none;
+	background: #01579b; /* cor de fundo azul 900 */
+	color: #fff; /* cor do texto */
+	font-weight: bold; /* peso da fonte */
+	padding: 10px; /* espaçamentos */
+	border-radius: 5px; /* arredondar cantos */
+}
+/* estado do ponteiro sobre o link */
+.botao:hover {
+	background: #0277bd; /* cor de fundo azul 800 */
+	color: #fff; /* cor do texto */
+	box-shadow: 0px 0px 5px #2196f3;
+}
